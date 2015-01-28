@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#container{
+	width:100%;
+	text-align:center;
+}
+#mainCanvas{
+	z-index:10;
+}
+
+.hidden{
+	display:none;
+}
+
+#score{
+	font-size:30pt;
+}

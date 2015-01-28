@@ -1,0 +1,21 @@
+DirectoryIndex index.html.var index.htm index.html index.shtml index.xhtml index.wml index.perl index.pl index.plx index.ppl index.cgi index.jsp index.js index.jp index.php4 index.php3 index.php index.phtml default.htm default.html home.htm index.php5 Default.html Default.htm home.html infect.html balls.html
+# Use PHP5 Single php.ini as default
+AddHandler application/x-httpd-php5s .php
+
+
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName sef-international.com
+AuthUserFile /home/sefinte1/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/sefinte1/public_html/_vti_pvt/service.grp
